@@ -1,0 +1,4 @@
+#!/bin/bash
+cat /etc/csf/csf.deny | grep BD/Bangladesh
+sed -i '/Bangladesh/d' /etc/csf/csf.deny
+csf -r
